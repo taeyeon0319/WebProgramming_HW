@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        .box{
+			width: 500px;
+			height: 800px;
+			margin: 20px auto;
+            background-color: black;
+
+        }
+        
+        p{
+            color:white;
+        }
+
+        .user_profile{
+            padding-top:10px;
+            margin-left:15px;
+        }
+
+        #user_photo{
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-top: 5px;
+            float: left;
+        }
+
+        .badge{
+            overflow:hidden;
+            width: 23px;
+            float: left;
+        }
+
+        #verified_badge{
+            height: 30px;
+            margin-left: 5px;
+            margin-top:13px;
+        }
+
+        #dot{
+            float:left;
+            margin-left:4px;
+            margin-right:4px;
+        }
+        #follow{
+            float:left;
+            color:#4c84b9;
+            font-weight: bolder;
+
+        }
+
+        #plus{
+            float:right;
+            margin-right:20px;
+        }
+
+        .user_name{
+            padding-left: 10px;
+            float: left;
+        }
+
+        .post{
+            clear:both;
+            overflow: hidden;
+        }
+
+        .post img{
+            height: 530px;
+            width: 700px;
+            margin-top: 10px;
+            margin-left:-100px;
+        }
+
+        .post_writing{
+            margin-left:10px;
+        }
+        #like_cnt{
+            font-weight: bold;
+            margin-bottom: -8px;
+        }
+        #id{
+            font-weight: bold;
+        }
+        #comment{
+            margin-top: -10px;
+            color:gray
+        }
+        #date{
+            color:gray;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="user_profile">
+            <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201611/16/htm_2016111623638229254.png" alt="뚱이 프로필" id="user_photo">
+            <p class="user_name">patrick_star</p>
+            <div class="badge">
+                <img src="https://trendhero.io/wp-content/themes/yootheme/cache/insta-verification-aa9e1701.png" alt="인증마크" id="verified_badge">
+            </div>
+            <p id="dot">•</p>
+            <p id="follow">팔로우</p>
+            <p id="plus">•••</p>
+            
+        </div>
+
+        <div class="post">
+             <img src="https://cdn.huffingtonpost.kr/news/photo/202110/113831_217959.png" alt="게시물사진">
+        </div>
+
+        <div class="icon">
+            <p>하트, 코멘트, DM, 저장 아이콘 그림</p>
+
+        </div>
+
+        <div class="post_writing">
+            <p id="like_cnt">좋아요 999.9만개</p>
+            <p><span id="id">patrik_star </span>내 소중한 친구 스펀지밥 사랑~해요~~</p>
+            <p id="comment">댓글 817개 모두 보기</p>
+            <p id="date">3월 19, 2023</p>
+        </div>
+       
+    </div>
+</body>
+</html>
