@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+        <title>돼지고기 김치찜</title>
+        <style>
+            *{
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            body{
+                text-align: center;
+                background-color: #ccc;
+            }
+
+            .header{
+                background-color: white;
+                width:100%;
+                position:fixed;
+                top:0;
+                left:0;
+                right:0;
+                z-index: 2;
+                border: 1px solid #ebebeb; 
+                
+            }
+
+            .middle1{
+                margin:150px auto 15px;
+                
+            }
+
+            .middle{
+                background-color: rgb(232, 232, 232);
+                border-radius: 10px;
+                width:1200px;
+                height: 1640px;
+                margin:0 auto;
+            }
+
+            .main_center{
+                margin:0 auto;
+                width:1200px;
+            }
+
+            .main{
+                float: left;
+                border: 1px solid #ebebeb; 
+                box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+                background-color: white;
+                margin:20px;
+                border-radius: 10px;
+            }
+            
+            .information{
+                width:700px;
+                margin: auto;
+            }
+
+            #main_img{
+                float: left; 
+                margin-right:10px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                width:350px;
+            }
+
+            p{
+                text-align: left;
+                
+            }
+
+            #highlight{
+                color:red; 
+                font-weight: bold;
+            }
+
+            .prepare{
+                margin:0 auto; 
+                width:700px;
+            }
+
+            hr{
+                border: 1px solid #ebebeb;
+                width:700px;
+            }
+
+            .ingredient{
+                float:left;
+            }
+
+            .seasoning{
+                float:right;
+            }
+
+            h2{
+                
+            }
+            .table1{
+                width:300px;
+                height:300px;
+                margin-left:10px;
+                
+            }
+
+            .table2{
+                width:300px;
+                height:230px;
+                margin-right:10px;
+                
+            }
+
+            th{
+                background-color: #969696;
+            }
+
+            td{
+                background-color: #dcdcdc;
+                text-align: left;
+            }
+
+            .cook{
+                padding-top:400px; 
+                margin:0 auto; 
+                width:770px;
+            }
+
+            .order, .order2{
+                width:230px;
+                float:left;
+                margin-bottom:20px;
+            }
+
+            .order img, .order2 img{
+                width:200px;
+            }
+
+            li{
+                text-align: left; 
+                vertical-align: bottom; 
+                margin-left:25px;
+                
+            }
+
+            .cookhi{
+                color:red; 
+                font-size: small;
+            }
+
+            #final{
+                font-weight: bold; 
+                color:red;
+            }
+
+            .order2{
+                clear:both;
+            }
+
+            .float{
+                float:left;
+                margin:20px 10px 20px;
+            }
+
+            .floating{
+                border: 1px solid #ebebeb; 
+                box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+                background-color: white;
+                width:350px;
+                position: fixed;
+                border-radius: 10px;
+            }
+
+            footer{
+                background-color: #333;
+                text-align: center;
+                color:#eee;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            button{
+                margin-top:10px;
+                border-radius: 10px;
+                height:35px;
+                width:200px;
+                font-size: large;
+                font-weight: bolder;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="header">
+            <h3>HOW TO COOK</h3>
+            <h1 style="font-style: italic;">돼지고기 김치찜 레시피</h1>
+            
+        </div>
+        
+        <div class="middle1">
+            <div class="middle" onclick="main_width()">
+                <div class="main_center">
+                    <div class="main">
+                        <!--사진&요리설명-->
+                        <div class="information">
+                            <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/8cb4b9f30e3570f4ff93dd3303eeff7f1.jpg" alt="돼지고기김치찜" id="main_img">
+                            <p><br><br><br><br><br><br>대중적인 <span id="highlight">한국 요리</span> 중 하나로, <br>배추김치를 기본으로 하여 동물성 재료와 파, 마늘 등의 향신료와 함께 오랜 시간 익혀내는 찜 요리이다<br>
+                            이 요리를 선택한 이유는 내가 가장 좋아하는 한식이기 때문이다. 맛있겠다..냠냠..</p>
+                        </div>
+
+                        <!--재료&양념-->
+                        <div class="prepare">
+                            <hr>
+                            <div class="ingredient">
+                                <h2>&lt;재료&gt;</h2>
+                                <table border="1" class="table1">
+                                    <th>재료</th>
+                                    <th>수량</th>
+                                    <tr>
+                                        <td>김치</td>
+                                        <td>1/4포기</td>
+                                    </tr>
+                                    <tr>
+                                        <td>돼지고기(앞다리살)</td>
+                                        <td>600g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>양파</td>
+                                        <td>1/2개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>청양고추</td>
+                                        <td>2~3개</td>
+                                    </tr>
+                                    <tr>
+                                        <td>다진 마늘</td>
+                                        <td>1스푼</td>
+                                    </tr>
+                                    <tr>
+                                        <td>다진 생강</td>
+                                        <td>0.3스푼</td>
+                                    </tr>
+                                    <tr>
+                                        <td>고춧가루</td>
+                                        <td>3스푼</td>
+                                    </tr>
+                                    <tr>
+                                        <td>대파</td>
+                                        <td>1대</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                                
+                            <div class="seasoning">
+                                <h2>&lt;양념&gt;</h2>
+                                <table border="1" class="table2">
+                                    <th>양념</th>
+                                    <th>수량</th>
+                                    <tr>
+                                        <td>설탕</td>
+                                        <td>1/2소주컵</td>
+                                    </tr>
+                                    <tr>
+                                        <td>국간장</td>
+                                        <td>1/2소주컵</td>
+                                    </tr>
+                                    <tr>
+                                        <td>새우젓</td>
+                                        <td>1소주컵</td>
+                                    </tr>
+                                    <tr>
+                                        <td>된장</td>
+                                        <td>0.5스푼</td>
+                                    </tr>
+                                    <tr>
+                                        <td>소금</td>
+                                        <td>0.3스푼</td>
+                                    </tr>
+                                    <tr>
+                                        <td>물</td>
+                                        <td>600ml~</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <!--조리순서-->
+                        <div class="cook">
+                            <hr>
+                            <h2>&lt;조리순서&gt;</h2>
+                            <ol>
+                                <div class="order">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/a4a6304b73276426d8211fcebaac88641.jpg" alt="김치와 돼지고기">
+                                    <li>돼지고기는 앞다리살로 준비<br><span class="cookhi">(삼겹살이나 목살도 무관)</span></br>
+                                        김치는 오래되지 않은 묵은지로 준비<br><span class="cookhi">(오래된 묵은지는 흐르는 물에 김치소 씻어 사용)</span></li>
+                                </div>
+                                <div class="order">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/5746bc8b03576784feb9276760ed22cf1.jpg" alt="쎃어놓은 야채">
+                                    <li>대파, 청양고추, 양파를 써어 준비</li>
+                                </div>
+                                <div class="order">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/cbdb3649f7295418b2843478db9991a11.jpg" alt="물준비">
+                                    <li>넓은 그릇에 물 600ml를 부어준비</li>
+                                </div>
+                                    
+
+                                <div class="order2">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/8178b0e19cfe158a43e9c7ed538addac1.jpg" alt="양념장 준비">
+                                    <li>양념재료<span class="cookhi">(설탕, 새우젓, 국간장, 된장, 소금)</span>을 넣어 양념장 준비</li>
+                                </div>
+                                <div class="order">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/8e561c585e441d9dd04709634ebd52481.jpg" alt="야채와 양념장 넣기">
+                                    <li>양념장과 썰어 놓은 대파, 양파, 청양고추 넣기</li>
+                                </div>
+                                <div class="order">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/4847c7a5287701974f69d36c6e6c39ca1.jpg" alt="다진재료">
+                                    <li>다진 마늘, 다진 생강, 고춧가루 넣기</li>
+                                </div>
+
+
+                                <div class="order2">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/4a092357c02fb9642ec554287f9f01fa1.jpg" alt="푹끓이기">
+                                    <li>1시간 30분 푹 끓이고 물의 양을 고려해주고 고기랑 김치가 바닥에 <br>눌러 붙지 않도록 하기</li>
+                                </div>
+                                <div class="order">
+                                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/21/0a09214720ddf173d39103262f06ebf11.jpg" alt="완성">
+                                    <li id="final">돼지고기 김치찜 완성!</li>
+                                </div>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="float">
+                        <div class="floating">
+                            <h2>&lt;레시피 링크&gt;</h2>
+                            <ul>
+                                <li><a href="https://www.10000recipe.com/recipe/6879898" target="_blank">돼지고기 김치찜 레시피 원본</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=RVfSeUZ8XkY" target="_blank">백종원 돼지고기 김치찜 요리영상</a></li>
+                                <li><a href="https://www.10000recipe.com/recipe/6875564" target="_blank">백종원 돼지고기 김치찜 레시피</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <button type="button" class="btn btn-warning">문서늘리기 버튼</button><br>
+            Copyright &copy; 2020112107 정보통신공학과 김태연<br>웹 프로그래밍 3주차 과제 - 레시피 문서
+        </footer>
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        <script>
+            $('.middle').click(function(){
+                var c_check = document.querySelector('.middle');
+                if (c_check.style.backgroundColor!='white'){
+                c_check.style.backgroundColor='white'
+                }else{
+                c_check.style.backgroundColor='black'
+            }
+            });
+
+            $('button').click(function(){
+                $('.middle').css({width: '+=50px'});
+            })
+            
+            $('.header').click(function(){
+                var check = confirm('헤더를 키우시겠습니까?')
+                if(check == true){
+                    $('.header').css({height: '+=10px'});
+                }
+            })
+
+        </script>
+    </body>
+
+
+</html>
